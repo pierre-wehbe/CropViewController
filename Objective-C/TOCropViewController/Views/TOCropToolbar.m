@@ -71,7 +71,7 @@
     NSBundle *resourceBundle = TO_CROP_VIEW_RESOURCE_BUNDLE_FOR_OBJECT(self);
     
     _doneTextButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [_doneTextButton setTitle: "Done"
+    [_doneTextButton setTitle: @"Done"
                      forState:UIControlStateNormal];
     [_doneTextButton setTitleColor:[UIColor colorWithRed:1.0f green:0.8f blue:0.0f alpha:1.0f] forState:UIControlStateNormal];
     [_doneTextButton.titleLabel setFont:[UIFont systemFontOfSize:17.0f]];
@@ -87,7 +87,7 @@
     
     _cancelTextButton = [UIButton buttonWithType:UIButtonTypeSystem];
     
-    [_cancelTextButton setTitle: "Cancel"
+    [_cancelTextButton setTitle: @"Cancel"
                        forState:UIControlStateNormal];
     [_cancelTextButton.titleLabel setFont:[UIFont systemFontOfSize:17.0f]];
     [_cancelTextButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
